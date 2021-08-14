@@ -1,5 +1,7 @@
 package cl.jparsoft.api.seguros.apiseguros.controllers;
 
+import java.util.Date;
+
 import org.springframework.stereotype.Service;
 
 import cl.jparsoft.api.seguros.apiseguros.endpoints.ProductService;
@@ -28,6 +30,12 @@ public class ProductAplicationService implements ProductService {
     public String listProducts() {
 
         return "listProducts";
+    }
+
+    @Override
+    public String getStatus() {
+        return new Date().toString();
+
     }
 
 }
