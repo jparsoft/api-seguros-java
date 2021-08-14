@@ -12,4 +12,22 @@ public class ProductAplicationService implements ProductService {
         return " Endpoint funcionando";
     }
 
+    @Override
+    public String evaluateProducts() {
+
+        return "evaluateProducts";
+    }
+
+    @Override
+    public String sellProducts() {
+
+        return "sellProducts";
+    }
+
+    @Override
+    public String listProducts() {
+
+        return "listProducts";
+    }
+
 }
