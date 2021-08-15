@@ -1,6 +1,9 @@
 package cl.jparsoft.api.seguros.apiseguros.endpoints;
 
 import org.springframework.web.bind.annotation.RestController;
+
+import cl.jparsoft.api.seguros.apiseguros.models.ResponseBO;
+
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
@@ -20,6 +23,6 @@ public interface ProductService {
     public String listProducts();
 
     @GetMapping(value = "/")
-    public String getStatus();
+    public ResponseBO<String> getStatus();
 
 }
